@@ -1,3 +1,20 @@
+Reference: 
+
+1) 3D Slicebox tutorial (https://www.youtube.com/watch?v=BPfYx4kq8Tg)
+
+2) Animated Text tutorial (https://www.youtube.com/watch?v=PP0Os0UvMCs)
+
+
+3) Sticky Social Media Button (https://www.youtube.com/watch?v=ALhb5BlfddY)
+
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +83,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
