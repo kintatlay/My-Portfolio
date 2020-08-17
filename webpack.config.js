@@ -48,6 +48,16 @@ module.exports = {
                     'xml-loader',
                 ],
             },
+            {
+                test: /\.(mov|mp4)$/,
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        name: "[name].[hash].[ext]"
+                    }  
+                    }
+                ]
+            },
         ],
     },
     devtool: 'cheap-module-eval-source-map',
