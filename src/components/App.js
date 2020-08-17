@@ -2,6 +2,8 @@ import React from 'react';
 import logo from '../assets/logo-black.png';
 import Grid from './Grid';
 import Main from './Main';
+import Portfolio from './Portfolio';
+import Education from './Education';
 
 function App() {
   return (
@@ -23,7 +25,9 @@ function App() {
       </header>
 
       <Main />
-
+      <Portfolio />
+      <Education />
+      
     </div>
   );
 }

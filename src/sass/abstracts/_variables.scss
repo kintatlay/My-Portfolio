@@ -2,11 +2,33 @@
 $color-primary: #50E2F5;
 $color-primary-light: #9DF7F3;
 $color-primary-dark: #5368F5;
+
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #ff7730;
+
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
+
 $color-azure: #EDF7F6;
+$color-azure-light: #8afff3;
+$color-azure-dark: #06b6a4;
+
 $color-lightpink: #FFA7B6;
+$color-lightpink-light: #FFA7B6;
+$color-lightpink-dark: #ff4e6b;
+
 $color-bordeaux: #A17F89;
+$color-bordeaux-light: #bb96a1;
+$color-bordeaux-dark: #725961;
+
+$color-lawngreen: #7CFC00;
+$color-lawngreen-light: #7CFC00;
+$color-lawngreen-dark: #5cb602;
+
 $color-grey-dark: #777;
 $color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+
 $color-white: #fff;
 $color-black: #000;
 
@@ -16,4 +38,4 @@ $default-font-size: 1.6rem;
 // GRID
 $grid-width: 114rem;
 $gutter-vertical: 8rem;
-$gutter-horizontal: 8rem;
+$gutter-horizontal: 6rem;
