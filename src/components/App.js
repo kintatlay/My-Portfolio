@@ -6,11 +6,12 @@ import Main from './Main';
 import GoldenGateMp4 from '../assets/golden-gate.mp4';
 import GoldenGateWebm from '../assets/golden-gate.webm';
 import Footer from './Footer';
+import Modal from './Modal';
 
 function App() {
   return (
     <div>
-
+      <Navigation />
       <header className="header">
           <video className="bg-video__content" autoPlay muted loop>
             <source src={GoldenGateMp4} type="video/mp4"></source>
@@ -36,7 +37,7 @@ function App() {
 
       <Main />
       <Footer />
-
+      <Modal />
     </div>
   );
 }
