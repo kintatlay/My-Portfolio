@@ -2,6 +2,8 @@ import React from 'react';
 import javascriptIconPic from '../assets/JavaScript-icon.png';
 import nodejsIconPic from '../assets/nodejs-icon.png';
 import reactIconPic from '../assets/react-icon.png';
+import Portfolio from './Portfolio';
+import Education from './Education';
 
 function Main() {
     return (
@@ -94,6 +96,8 @@ function Main() {
                     </div>
                 </div>
             </section>
+            <Portfolio />
+            <Education />
         </main>
     );
 }

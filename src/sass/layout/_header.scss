@@ -1,15 +1,22 @@
 .header {
     height: 95vh;
-    background-image: linear-gradient(
-        to right bottom, 
-        rgba($color-primary-dark, 0.8), 
-        rgba($color-primary-light, 0.8)),
-        url(../assets/hardwork.jpg);
     background-size: cover;
     background-position: top;
     position: relative;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+    &__overlay {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-image: linear-gradient(
+            to right bottom, 
+            rgba($color-primary-light, 0.5),
+            rgba($color-primary-dark, 0.5))
+    }
 
     &__logo-box {
         position: absolute;
@@ -18,8 +25,8 @@
     }
 
     &__logo {
-        opacity: 0.3;
-        height: 3.5rem;
+        opacity: 0.8;
+        height: 4rem;
         -webkit-filter: drop-shadow(1px 1px 1px rgba(34, 34, 34, 0.5));
         filter: drop-shadow(1px 1px 1px rgba(34, 34, 34, 0.5));
     }

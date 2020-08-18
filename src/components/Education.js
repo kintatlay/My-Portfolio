@@ -1,43 +1,21 @@
 import React from 'react';
-import SJSUicon from '../assets/SJSU-school-icon.jpg';
 import CCicon from '../assets/ChabotCollege-school-icon.jpg';
 import HRicon from '../assets/HackReactor-school-icon.png';
 import UCBEicon from '../assets/UCBExtension-school-icon.jpg';
 import CSUFicon from '../assets/CSUF-school-icon.jpg';
 import UCBicon from '../assets/UCB-school-icon.jpg';
-import GoldenGateVideo from '../assets/golden-gate.mp4';
+import graduation from '../assets/graduation.jpg';
 
 function Education() {
     return (
         <section className="section-educations">
             <div className="bg-video">
-                <video src="" className="bg-video__content" autoPlay muted loop>
-                    <source src={GoldenGateVideo} type="video/mp4"></source>
-                    Your browser is not supported!
-                </video>
+                <img src={graduation} className="bg-video__content"></img>
             </div>
             <div className="u-center-text u-margin-bottom-big">
                 <h2 className="heading-secondary">
                     Education
                 </h2>
-            </div>
-
-            <div className="row">
-                <div className="education">
-                    <figure className="education__shape">
-                        <img className="education__img" src={SJSUicon} alt="SJSU icon" />
-                        <figcaption className="education__caption">San Jose, CA</figcaption>
-                    </figure>
-                    <div className="education__text">
-                        <h3 className="heading-quaternary u-margin-bottom-small">
-                            San Jose State University
-                        </h3>
-                        <h4 className="education__white-spacing u-margin-bottom-small">M. S. in Data Analytics    |    08/2020 - Present</h4>
-                        <p>
-                            Relevant Coursework:
-                        </p>
-                    </div>
-                </div>
             </div>
 
             <div className="row">

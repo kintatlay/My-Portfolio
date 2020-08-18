@@ -49,7 +49,7 @@ module.exports = {
                 ],
             },
             {
-                test: /\.(mov|mp4)$/,
+                test: /\.(mov|mp4|webm)$/,
                 use: [{
                     loader: 'file-loader',
                     options: {

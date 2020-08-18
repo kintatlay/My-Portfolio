@@ -1,10 +1,10 @@
 .education {
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
     box-shadow: 0 3rem 6rem rgba($color-black, .1);
-    background-color: $color-white;
+    background-color: rgba($color-white, .8);
     border-radius: 3px;
-    padding: 4rem;
+    padding: 3rem;
     padding-left: 9rem;
     font-size: $default-font-size;
     transform: skewX(-12deg);
@@ -12,8 +12,8 @@
     align-items: center;
 
     &__shape {
-        width: 15rem;
-        height: 15rem;
+        width: 12rem;
+        height: 12rem;
         -webkit-shape-outside: circle(50% at 50% 50%);
         shape-outside: circle(50% at 50% 50%);
 
