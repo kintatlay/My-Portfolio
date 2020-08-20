@@ -73,7 +73,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #2998ff, #5368F5);
+  background-image: linear-gradient(to right, #5db0fd, #5368F5);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 2px;
@@ -95,13 +95,19 @@ body {
 .paragraph {
   font-size: 1.6rem; }
   .paragraph:not(:last-child) {
-    margin-bottom: 3rem; }
+    margin-bottom: 2rem; }
+
+.multiple-white-space {
+  white-space: pre-wrap; }
 
 .u-center-text {
   text-align: center; }
 
 .u-margin-bottom-small {
   margin-bottom: 1rem; }
+
+.u-margin-bottom-small-medium {
+  margin-bottom: 2rem; }
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem; }
@@ -114,6 +120,12 @@ body {
 
 .u-margin-top-huge {
   margin-top: 10rem; }
+
+.u-margin-right-medium {
+  margin-right: 5rem; }
+
+.text-font-style {
+  font-style: italic; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -142,6 +154,12 @@ body {
   .btn--white::after {
     background-color: #fff; }
 
+.btn--blue {
+  background: linear-gradient(to right bottom, #5db0fd, #5368F5);
+  color: #fff; }
+  .btn--blue::after {
+    background: linear-gradient(to right bottom, #5db0fd, #5368F5); }
+
 .btn::after {
   content: "";
   display: inline-block;
@@ -160,15 +178,15 @@ body {
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
-  color: #50E2F5;
+  color: #2998ff;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid #50E2F5;
+  border-bottom: 1px solid #2998ff;
   padding: 3px;
   transform: all .2s; }
 
 .btn-text:hover {
-  background-color: #50E2F5;
+  background-color: #2998ff;
   color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px); }
@@ -185,8 +203,10 @@ body {
     border-radius: 2px;
     position: absolute;
     z-index: 10;
-    transition: all .2s;
-    outline-offset: 2rem; }
+    transition: all .5s;
+    outline-offset: 2rem;
+    -webkit-box-shadow: 0 0 7px 5px #fff;
+    box-shadow: 0 0 7px 5px #fff; }
     .composition__photo--p1 {
       left: 0;
       top: -2rem; }
@@ -197,12 +217,12 @@ body {
       left: 20%;
       top: 10rem; }
     .composition__photo:hover {
-      outline: 1.5rem solid #50E2F5;
+      -webkit-box-shadow: 0 0 7px 5px #fff;
+      box-shadow: 0 0 7px 5px #fff;
       transform: scale(1.05) translateY(-0.5rem);
-      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 20; }
   .composition:hover .composition__photo:not(:hover) {
-    transform: scale(0.95); }
+    transform: scale(0.75); }
 
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
@@ -217,7 +237,7 @@ body {
     font-size: 6rem;
     margin-bottom: .5rem;
     display: inline-block;
-    background-image: linear-gradient(to right, #2998ff, #5368F5);
+    background-image: linear-gradient(to right, #5db0fd, #5368F5);
     -webkit-background-clip: text;
     color: transparent; }
   .feature-box:hover {
@@ -402,6 +422,73 @@ body {
     width: 100%;
     object-fit: cover; }
 
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2500;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3; }
+  .popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    background-color: #fff;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    display: table;
+    overflow: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.25);
+    transition: all .5s .2s; }
+  .popup__left {
+    width: 33.333333%;
+    display: table-cell;
+    box-shadow: -1px 0px 0px 0px #eee, 1px 0px 0px 0px #eee; }
+  .popup__right {
+    width: 66.666667%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 5rem; }
+  .popup__initial {
+    text-transform: initial; }
+  .popup__img {
+    display: block;
+    width: 100%; }
+  .popup__text {
+    font-size: 1.4rem;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto; }
+    .popup__text__list {
+      padding-left: 2rem;
+      list-style-position: outside; }
+  .popup:target {
+    opacity: 1;
+    visibility: visible; }
+  .popup:target .popup__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); }
+  .popup__close:link, .popup__close:visited {
+    color: #777;
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    font-size: 3rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .2s;
+    line-height: 1; }
+  .popup__close:hover {
+    color: #2998ff; }
+
 .header {
   height: 95vh;
   background-size: cover;
@@ -415,7 +502,7 @@ body {
     position: absolute;
     top: 0px;
     left: 0px;
-    background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.5), rgba(83, 104, 245, 0.5)); }
+    background-image: linear-gradient(to right bottom, rgba(93, 176, 253, 0.5), rgba(83, 104, 245, 0.5)); }
   .header__logo-box {
     position: absolute;
     top: 4rem;
@@ -488,7 +575,7 @@ body {
     display: inline-block;
     transition: all .2s; }
   .footer__link:hover, .footer__link:active {
-    color: #50E2F5;
+    color: #2998ff;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
     transform: rotate(5deg) scale(1.3); }
   .footer__copyright {
@@ -520,7 +607,7 @@ body {
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  background-image: radial-gradient(#2998ff, #5368F5);
+  background-image: radial-gradient(#5db0fd, #5368F5);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
 
@@ -565,7 +652,7 @@ body {
 
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
-  color: #50E2F5;
+  color: #2998ff;
   transform: translateX(1rem); }
 
 .navigation__checkbox:checked ~ .navigation__background {
@@ -619,7 +706,7 @@ body {
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(83, 104, 245, 0.8), rgba(41, 152, 255, 0.8)), url(../assets/programming.jpg);
+  background-image: linear-gradient(to right bottom, rgba(83, 104, 245, 0.8), rgba(93, 176, 253, 0.8)), url(../assets/programming.jpg);
   background-size: cover;
   margin-top: -10rem;
   transform: skewY(-7deg); }

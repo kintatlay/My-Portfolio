@@ -8,7 +8,7 @@ import graduation from '../assets/graduation.jpg';
 
 function Education() {
     return (
-        <section className="section-educations">
+        <section className="section-educations" id="section-education">
             <div className="bg-video">
                 <img src={graduation} className="bg-video__content"></img>
             </div>
@@ -30,7 +30,7 @@ function Education() {
                         </h3>
                         <h4 className="education__white-spacing u-margin-bottom-small">A. S. in Computer Science    |    GPA: 4.00    |    01/2017 - Present</h4>
                         <p>
-                            Relevant Coursework: Introduction to Data Structures, Object-Oriented Programming Methods in Java, Introduction to Structured Programming in C++, Introduction to UNIX
+                            <span className="text-font-style">Relevant Coursework: </span>Introduction to Data Structures, Object-Oriented Programming Methods in Java, Introduction to Structured Programming in C++, Introduction to UNIX
                         </p>
                     </div>
                 </div>
@@ -78,7 +78,7 @@ function Education() {
                         </h3>
                         <h4 className="education__white-spacing u-margin-bottom-small">M. S. in Accountancy    |    GPA: 3.91    |    05/2016</h4>
                         <p>
-                            Relevant Coursework: Decision Models for Business And Economics 
+                            <span className="text-font-style">Relevant Coursework: </span>Decision Models for Business And Economics 
                         </p>
                     </div>
                 </div>
@@ -96,7 +96,7 @@ function Education() {
                         </h3>
                         <h4 className="education__white-spacing u-margin-bottom-small">B. A. in Environmental Economics & Policy    |    GPA: 3.42    |    05/2011</h4>
                         <p>
-                            Relevant Coursework: Statistical Analysis of Continuous Outcome Data, SAS Programming, Multivariable Calculus, Linear Algebra
+                            <span className="text-font-style">Relevant Coursework: </span>Statistical Analysis of Continuous Outcome Data, SAS Programming, Multivariable Calculus, Linear Algebra
                         </p>
                     </div>
                 </div>

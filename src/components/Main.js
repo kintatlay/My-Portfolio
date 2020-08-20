@@ -2,35 +2,34 @@ import React from 'react';
 import javascriptIconPic from '../assets/JavaScript-icon.png';
 import nodejsIconPic from '../assets/nodejs-icon.png';
 import reactIconPic from '../assets/react-icon.png';
+import Skills from './Skills';
 import Portfolio from './Portfolio';
 import Education from './Education';
+import resume from '../assets/KinTatLayResume.pdf';
 
 function Main() {
     return (
         <main>
-            <section className="section-about">
+            <section className="section-about" id="section-about-me">
                 <div className="u-center-text u-margin-bottom-big">
                     <h2 className="heading-secondary">
-                        Exciting tours for adventurous people
+                        My Objective
                     </h2>
                 </div>
 
                 <div className="row">
                     <div className="col-1-of-2">
-                        <h3 className="heading-tertiary u-margin-bottom-small">
-                            You're going to fall in love with nature
+                        <h3 className="heading-tertiary u-margin-bottom-small-medium">
+                            Software Engineer actively seeking opportunities
                         </h3>
                         <p className="paragraph">
-                            Contrary to popular belief, Lorem Ipsum is not simply random text.
+                        I am a Full-Stack Software Engineer who is excited to build meaningful applications that focus on improving efficiencies to tasks or change the way we live our life. I enjoy working with JavaScript, Node.JS, MySQL/MongoDB, React, and Express to build full-stack websites.
                         </p>
-                        <h3 className="heading-tertiary u-margin-bottom-small">
-                            Like adventures like you never have before
-                        </h3>
                         <p className="paragraph">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. This is very cool stuff going on there.
+                        I am committed to solving challenges with a detailed-oriented mindsets and delivering quality products and services. With my background in accounting, I acquired the quantitative skill to problem solve issues and understand what the market and customers need.
                         </p>
 
-                        <a href="#" className="btn-text">Learn more &rarr;</a>
+                        <a href={resume} download="Kin Tat Lay Resume" className="btn-text multiple-white-space">Download My Resume (PDF)  <i className="icon-basic-download"></i></a>
                     </div>
                     <div className="col-1-of-2">
                         <div className="composition">
@@ -42,60 +41,7 @@ function Main() {
                 </div>
             </section>
 
-            <section className="section-features">
-                
-                <div className="row">
-                    <div className="col-1-of-4">
-                        <div className="feature-box">
-                            <i className="feature-box__icon icon-basic-webpage-img-txt"></i>
-                            <h3 className="heading-tertiary u-margin-bottom-small">Frontend</h3>
-                            <ul className="feature-box__text">
-                                <li>HTML</li>
-                                <li>CSS | SASS</li>
-                                <li>Styled-Components</li>
-                                <li>JavaScript</li>
-                                <li>React | Redux</li>
-                                <li>React Native</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div className="col-1-of-4">
-                        <div className="feature-box">
-                            <i className="feature-box__icon icon-basic-share"></i>
-                            <h3 className="heading-tertiary u-margin-bottom-small">Server</h3>
-                            <ul className="feature-box__text">
-                                <li>NodeJS</li>
-                                <li>Express</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div className="col-1-of-4">
-                        <div className="feature-box">
-                            <i className="feature-box__icon icon-basic-server2"></i>
-                            <h3 className="heading-tertiary u-margin-bottom-small">Database</h3>
-                            <ul className="feature-box__text">
-                                <li>MySQL</li>
-                                <li>MongoDB</li>
-                                <li>PostgreSQL</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div className="col-1-of-4">
-                        <div className="feature-box">
-                            <i className="feature-box__icon icon-basic-cloud"></i>
-                            <h3 className="heading-tertiary u-margin-bottom-small">Deployment</h3>
-                            <ul className="feature-box__text">
-                                <li>AWS EC2</li>
-                                <li>Docker</li>
-                                <li>Nginx</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <Skills />
             <Portfolio />
             <Education />
         </main>

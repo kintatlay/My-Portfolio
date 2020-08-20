@@ -4,9 +4,9 @@ Reference:
 
 2) Animated Text tutorial (https://www.youtube.com/watch?v=PP0Os0UvMCs)
 
-
 3) Sticky Social Media Button (https://www.youtube.com/watch?v=ALhb5BlfddY)
 
+4) Fill text effect tutorial (https://www.youtube.com/watch?v=O3RTTyQcNvI)
 
 
 

@@ -1,3 +1,4 @@
+// This page for practice only
 import React from 'react';
 
 function Grid() {

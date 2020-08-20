@@ -34,6 +34,14 @@
             background-color: $color-white;
         }
     }
+
+    &--blue {
+        background: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+        color: $color-white;
+        &::after {
+            background: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+        }
+    }
     
     &::after {
         content: "";

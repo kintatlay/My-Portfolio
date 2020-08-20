@@ -5,6 +5,7 @@ import Navigation from './Navigation';
 import Main from './Main';
 import GoldenGateMp4 from '../assets/golden-gate.mp4';
 import GoldenGateWebm from '../assets/golden-gate.webm';
+import HongKongMP4 from '../assets/hongkong.mp4';
 import Footer from './Footer';
 import Modal from './Modal';
 
@@ -14,7 +15,7 @@ function App() {
       <Navigation />
       <header className="header">
           <video className="bg-video__content" autoPlay muted loop>
-            <source src={GoldenGateMp4} type="video/mp4"></source>
+            <source src={HongKongMP4} type="video/mp4"></source>
             <source src={GoldenGateWebm} type="video/mp4"></source>
               Your browser is not supported!
           </video>
@@ -30,7 +31,7 @@ function App() {
             <span className="heading-primary--sub">Software Engineer</span>
           </h1>
 
-          <a href="#" className="btn btn--white btn--animated">See Projects</a>
+          <a href="#section-portfolio" className="btn btn--white btn--animated">See Projects</a>
         </div>
 
       </header>

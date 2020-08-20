@@ -7,7 +7,7 @@ import RealEstateAnalysisCover from '../assets/RealEstateAnalysis.jpg';
 
 function Portfolio() {
     return (
-        <section className="section-portfolio">
+        <section className="section-portfolio" id="section-portfolio">
             <div className="u-center-text u-margin-bottom-big">
                 <h2 className="heading-secondary">
                     My Projects
@@ -28,7 +28,7 @@ function Portfolio() {
                             </h4>
                             <div className="card__details">
                                 <ul>
-                                    <li>React</li>
+                                    <li>React Hooks</li>
                                     <li>HTML</li>
                                     <li>CSS</li>
                                     <li>AWS</li>
@@ -41,7 +41,7 @@ function Portfolio() {
                                     <p className="card__project-type">Full Stack project</p>
                                     <p className="card__project-description">A travel directory web app that helps travelers simplify their traveling experience.</p>
                                 </div>
-                                <a href="#" className="btn btn--white">Work In Progress</a>
+                                <a href="#popup-trswag" className="btn btn--white">Explore</a>
                             </div>
                         </div>
                     </div>
@@ -71,8 +71,7 @@ function Portfolio() {
                                     <p className="card__project-type">Frontend project</p>
                                     <p className="card__project-description">My portfolio website that details my tech stack knowledge and project experience.</p>
                                 </div>
-                                <a href="#" className="btn btn--white u-margin-bottom-medium">Demo</a>
-                                <a href="#" className="btn btn--white">Source Code</a>
+                                <a href="#popup-myportfolio" className="btn btn--white">Explore</a>
                             </div>
                         </div>
                     </div>
@@ -104,7 +103,7 @@ function Portfolio() {
                                     <p className="card__project-type">Backend project</p>
                                     <p className="card__project-description">Ecommerce fashion website that provides product information and customers' feedbacks. My focus on this project is system design.</p>
                                 </div>
-                                <a href="#" className="btn btn--white">Source Code</a>
+                                <a href="#popup-abidas" className="btn btn--white">Explore</a>
                             </div>
                         </div>
                     </div>
@@ -139,8 +138,7 @@ function Portfolio() {
                                     <p className="card__project-type">Frontend project</p>
                                     <p className="card__project-description">Music Streaming Service app that allows users to play music, create playlists, and engage with other listeners.</p>
                                 </div>
-                                <a href="#" className="btn btn--white u-margin-bottom-medium">Demo</a>
-                                <a href="#" className="btn btn--white">Source Code</a>
+                                <a href="#popup-soundclone" className="btn btn--white">Explore</a>
                             </div>
                         </div>
                     </div>
@@ -171,8 +169,7 @@ function Portfolio() {
                                     <p className="card__project-type">Data Mining | Frontend project</p>
                                     <p className="card__project-description">Data mining project on California Real Estate Market.</p>
                                 </div>
-                                <a href="#" className="btn btn--white u-margin-bottom-medium">Demo</a>
-                                <a href="#" className="btn btn--white">Source Code</a>
+                                <a href="#popup-realEstate" className="btn btn--white">Explore</a>
                             </div>
                         </div>
                     </div>
@@ -198,7 +195,7 @@ function Portfolio() {
                         </div>
                         <div className="card__side card__side--back card__side--back-6">
                             <div className="card__cta">
-                                <a href="#" className="btn btn--white">More Projects</a>
+                                <a href="https://github.com/kintatlay" target = "_blank" rel="noopener noreferrer" className="btn btn--white">More Projects</a>
                             </div>
                         </div>
                     </div>

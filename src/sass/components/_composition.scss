@@ -7,8 +7,10 @@
         border-radius: 2px;
         position: absolute;
         z-index: 10;
-        transition: all .2s;
+        transition: all .5s;
         outline-offset: 2rem;
+        -webkit-box-shadow: 0 0 7px 5px #fff;
+        box-shadow: 0 0 7px 5px #fff;
 
         &--p1 {
             left: 0;
@@ -26,14 +28,14 @@
         }
 
         &:hover {
-            outline: 1.5rem solid $color-primary;
+            -webkit-box-shadow: 0 0 7px 5px #fff;
+            box-shadow: 0 0 7px 5px #fff;
             transform: scale(1.05) translateY(-.5rem);
-            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
             z-index: 20;
         }
     }
 
     &:hover &__photo:not(:hover) {
-        transform: scale(.95);
+        transform: scale(.75);
     }
 }
