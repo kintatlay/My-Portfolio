@@ -4,11 +4,13 @@
     position:fixed;
     top: 0;
     left: 0;
-    background-color: rgba($color-black, .8);
+    background-color: rgba($color-black, .3);
     z-index: 2500;
     opacity: 0;
     visibility: hidden;
     transition: all .3;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 
     &__content {
         @include absCenter;
@@ -22,12 +24,21 @@
         opacity: 0;
         transform: translate(-50%, -50%) scale(.25);
         transition: all .5s .2s;
+
+        @include respond(tab-land) {
+            display: block;
+        }
     }
 
     &__left {
         width: 33.333333%;
         display: table-cell;
-        box-shadow: -1px 0px 0px 0px $color-grey-light-2, 1px 0px 0px 0px $color-grey-light-2;
+
+        @include respond(tab-land) {
+            width: 100%;
+            display: block;
+            
+        }
     }
 
     &__right {
@@ -35,6 +46,11 @@
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
+
+        @include respond(tab-land) {
+            display: block;
+            width: 100%;
+        }
     }
 
     &__initial {
@@ -44,6 +60,13 @@
     &__img {
         display: block;
         width: 100%;
+        box-shadow: 1px 0px 0px 0px $color-grey-light-2;
+
+        @include respond(tab-land) {
+            width: 50%;
+            display: inline;
+            box-shadow: 0px 2px 0px -1px $color-grey-light-2;
+        }
     }
 
     &__text {
@@ -53,6 +76,10 @@
         -ms-hyphens: auto;
         -webkit-hyphens: auto;
         hyphens: auto;
+
+        @media only screen and (max-width: 25em), only screen and (max-height: 43.75em) {
+            display: none;
+        }
 
         &__list {
             padding-left: 2rem;
@@ -74,6 +101,12 @@
     }
 
     &__close {
+
+        @include respond(tab-land) {
+            background-color: rgba($color-grey-light-1, .5);
+            border-radius: 100% / 50%;
+        }
+
         &:link,
         &:visited {
             color: $color-grey-dark;
@@ -85,6 +118,11 @@
             display: inline-block;
             transition: all .2s;
             line-height: 1;
+
+            @include respond(tab-land) {
+                color: $color-black;
+            }
+    
         }
 
         &:hover {

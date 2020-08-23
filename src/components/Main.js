@@ -1,4 +1,7 @@
 import React from 'react';
+import javascriptIconPicSmall from '../assets/JavaScript-icon-small.png';
+import nodejsIconPicSmall from '../assets/nodejs-icon-small.png';
+import reactIconPicSmall from '../assets/react-icon-small.png';
 import javascriptIconPic from '../assets/JavaScript-icon.png';
 import nodejsIconPic from '../assets/nodejs-icon.png';
 import reactIconPic from '../assets/react-icon.png';
@@ -33,9 +36,13 @@ function Main() {
                     </div>
                     <div className="col-1-of-2">
                         <div className="composition">
-                            <img src={nodejsIconPic} alt="Photo 1" className="composition__photo composition__photo--p1" />
-                            <img src={reactIconPic} alt="Photo 2" className="composition__photo composition__photo--p2" />
-                            <img src={javascriptIconPic} alt="Photo 3" className="composition__photo composition__photo--p3" />
+                            <img srcSet={`${nodejsIconPicSmall} 300w, ${nodejsIconPic} 1000w`} sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 1" className="composition__photo composition__photo--p1" src={nodejsIconPic} />
+                            <img srcSet={`${reactIconPicSmall} 300w, ${reactIconPic} 1000w`} sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 2" className="composition__photo composition__photo--p2" src={reactIconPic} />
+                            <img srcSet={`${javascriptIconPicSmall} 300w, ${javascriptIconPic} 1000w`} 
+                                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" 
+                                alt="Photo 3" 
+                                className="composition__photo composition__photo--p3" 
+                                src={javascriptIconPic} />
                         </div>
                     </div>
                 </div>

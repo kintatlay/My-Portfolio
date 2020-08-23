@@ -18,7 +18,7 @@ function Education() {
                 </h2>
             </div>
 
-            <div className="row">
+            <div className="row row-2">
                 <div className="education">
                     <figure className="education__shape">
                         <img className="education__img" src={CCicon} alt="Chabot College icon" />
@@ -36,7 +36,7 @@ function Education() {
                 </div>
             </div>
 
-            <div className="row">
+            <div className="row row-2">
                 <div className="education">
                     <figure className="education__shape">
                         <img className="education__img" src={HRicon} alt="Hack Reactor icon" />
@@ -51,7 +51,7 @@ function Education() {
                 </div>
             </div>
 
-            <div className="row">
+            <div className="row row-2">
                 <div className="education">
                     <figure className="education__shape">
                         <img className="education__img" src={UCBEicon} alt="UC Berkeley Extension icon" />
@@ -66,7 +66,7 @@ function Education() {
                 </div>
             </div>
 
-            <div className="row">
+            <div className="row row-2">
                 <div className="education">
                     <figure className="education__shape">
                         <img className="education__img" src={CSUFicon} alt="CSUF icon" />
@@ -84,7 +84,7 @@ function Education() {
                 </div>
             </div>
 
-            <div className="row">
+            <div className="row row-2">
                 <div className="education">
                     <figure className="education__shape">
                         <img className="education__img" src={UCBicon} alt="CSUF icon" />

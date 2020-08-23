@@ -7,6 +7,9 @@ import abidas1 from '../assets/Abidas1.jpg';
 import abidas2 from '../assets/Abidas2.jpg';
 import soundclone1 from '../assets/SoundClone1.jpg';
 import soundclone2 from '../assets/SoundClone2.jpg';
+import realestateanalysis1 from '../assets/RealEstateAnalysis1.jpg';
+import realestateanalysis2 from '../assets/RealEstateAnalysis2.jpg';
+
 
 function Modal() {
     return (
@@ -92,8 +95,8 @@ function Modal() {
             <div className="popup" id="popup-soundclone">
                 <div className="popup__content">
                     <div className="popup__left">
-                        <img src={soundclone1} alt="Cover page of TrSwag website" className="popup__img" />
-                        <img src={soundclone2} alt="Dating page of TrSwag website" className="popup__img" />
+                        <img src={soundclone1} alt="Picture of Soundclone website" className="popup__img" />
+                        <img src={soundclone2} alt="Picture of Soundclone website" className="popup__img" />
                     </div>
                     <div className="popup__right">
                         <a href="#section-portfolio" className="popup__close">&times;</a>
@@ -121,8 +124,8 @@ function Modal() {
             <div className="popup" id="popup-realEstate">
                 <div className="popup__content">
                     <div className="popup__left">
-                        <img src={trswag1} alt="Cover page of TrSwag website" className="popup__img" />
-                        <img src={trswag2} alt="Dating page of TrSwag website" className="popup__img" />
+                        <img src={realestateanalysis1} alt="Cover page of Real Estate Analysis website" className="popup__img" />
+                        <img src={realestateanalysis2} alt="Tableau data of Real Estate Analysis website" className="popup__img" />
                     </div>
                     <div className="popup__right">
                         <a href="#section-portfolio" className="popup__close">&times;</a>

@@ -1,11 +1,15 @@
 import React from 'react';
-import logo from '../assets/logo-blue.png';
+import logo2x from '../assets/logo-blue-2x.png';
+import logo1x from '../assets/logo-blue-1x.png';
 
 function Footer() {
     return (
         <footer className="footer">
             <div className="footer__logo-box">
-                <img src={logo} alt="Full logo" className="footer__logo"></img>
+                <picture className="footer__logo">
+                    <source srcSet={`${logo1x} 1x, ${logo2x} 2x`} media="(max-width: 37.5em)"></source>
+                    <img srcSet={`${logo1x} 1x, ${logo2x} 2x`} alt="Full logo" className="Full logo" src={logo2x}></img>
+                </picture>
             </div>
             <div className="row">
                 <div className="col-1-of-2">
@@ -19,7 +23,7 @@ function Footer() {
                 </div>
                 <div className="col-1-of-2">
                     <p className="footer__copyright">
-                        Built by <a href="#" className="footer__link">Kin Tat Lay</a> for job hunting purpose. Copyright &copy; by Kin Tat Lay. You are 100% allowed to reach out to me for employment purpose, but not to sell my personal data for commercial usage.
+                        Built by <a href="#" className="footer__link">Kin Tat Lay</a> for job hunting purpose. Copyright &copy; by Kin Tat Lay. You are 100% allowed to reac out to me for employment purpose, but not to sell my personal data for commercial usage.
                     </p>
                 </div>
             </div>

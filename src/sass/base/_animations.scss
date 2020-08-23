@@ -41,3 +41,10 @@
         transform: translate(0);
     }
 }
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+        filter:hue-rotate(360deg)
+    }
+}
