@@ -61,7 +61,8 @@ function Portfolio() {
                                 <ul>
                                     <li>React</li>
                                     <li>HTML</li>
-                                    <li>SASS</li>
+                                    <li>SASS | SCSS</li>
+                                    <li>Firebase</li>
                                 </ul>
                             </div>
                         </div>

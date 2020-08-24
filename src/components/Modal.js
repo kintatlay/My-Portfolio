@@ -53,10 +53,11 @@ function Modal() {
                             </p>
                             <ul className="popup__text__list">
                                 <li>Created a portfolio website using SCSS with maintainable and reuseable codes.</li>
+                                <li>Deployed application on Firebase with custom domain name.</li>
                             </ul>
                         </div>
                         <div>
-                            <a href="#" className="btn btn--blue u-margin-right-medium">Demo</a>
+                            <a href="https://www.kintatlay.com" className="btn btn--blue u-margin-right-medium">Demo</a>
                             <a href="https://github.com/kintatlay/My-Portfolio" target="_blank" rel="noopener noreferrer" className="btn btn--blue">Source Code</a>
                         </div>
                         

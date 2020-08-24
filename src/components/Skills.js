@@ -48,6 +48,7 @@ function Skills() {
                         <h3 className="heading-tertiary u-margin-bottom-small">Deployment</h3>
                         <ul className="feature-box__text">
                             <li>AWS EC2</li>
+                            <li>Firebase</li>
                             <li>Docker</li>
                             <li>Nginx</li>
                         </ul>

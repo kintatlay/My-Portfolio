@@ -23,7 +23,7 @@ function Footer() {
                 </div>
                 <div className="col-1-of-2">
                     <p className="footer__copyright">
-                        Built by <a href="#" className="footer__link">Kin Tat Lay</a> for job hunting purpose. Copyright &copy; by Kin Tat Lay. You are 100% allowed to reac out to me for employment purpose, but not to sell my personal data for commercial usage.
+                        Built by <a href="#" className="footer__link">Kin Tat Lay</a> for job hunting purpose. Copyright &copy; by Kin Tat Lay. You are 100% allowed to reach out to me for employment purpose, but not to sell my personal data for commercial usage.
                     </p>
                 </div>
             </div>

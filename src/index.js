@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App.js';
 import './css/index.css';
-import './css/icon-fonts.css';
+// import './css/icon-fonts.css';
 
 ReactDOM.render(
     <App />,
