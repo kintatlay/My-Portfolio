@@ -1,14 +1,14 @@
 # My Portfolio
 
-### Project Description
+## Project Description
 
 **This is a project that describes my tech skills in web development. The goal of this project is to demonstrate my React and SASS skill, as well as the ability to write maintainable and reusable codes.**
 
-### Project Demo
+## Project Demo
 
 ![Project Demo](https://media.giphy.com/media/Lr3UUFvyhBR8W56xcL/giphy.gif)
 
-### Project Commands
+## Project Commands
 
 **To edit the project:** 
 
