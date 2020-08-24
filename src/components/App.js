@@ -3,7 +3,7 @@ import logo from '../assets/logo-white.png';
 import Grid from './Grid';
 import Navigation from './Navigation';
 import Main from './Main';
-import GoldenGateMp4 from '../assets/golden-gate.mp4';
+// import GoldenGateMp4 from '../assets/golden-gate.mp4';
 import GoldenGateWebm from '../assets/golden-gate.webm';
 import HongKongMP4 from '../assets/hongkong.mp4';
 import Footer from './Footer';
