@@ -52,7 +52,7 @@ function Modal() {
                                 Responsibilities / Accomplishments:
                             </p>
                             <ul className="popup__text__list">
-                                <li>Created a portfolio website using SCSS with maintainable and reuseable codes.</li>
+                                <li>Created a portfolio website using SCSS with maintainable and reusable codes.</li>
                                 <li>Deployed application on Firebase with custom domain name.</li>
                             </ul>
                         </div>
