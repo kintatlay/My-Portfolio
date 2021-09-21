@@ -1,4 +1,5 @@
 import React from 'react';
+import ASUIcon from '../assets/ASU-school-icon.jpg';
 import CCicon from '../assets/ChabotCollege-school-icon.jpg';
 import HRicon from '../assets/HackReactor-school-icon.png';
 import UCBEicon from '../assets/UCBExtension-school-icon.jpg';
@@ -21,6 +22,24 @@ function Education() {
             <div className="row row-2">
                 <div className="education">
                     <figure className="education__shape">
+                        <img className="education__img" src={ASUIcon} alt="Arizona State University icon" />
+                        <figcaption className="education__caption">Tempe, AZ</figcaption>
+                    </figure>
+                    <div className="education__text">
+                        <h3 className="heading-quaternary u-margin-bottom-small">
+                            Arizona State University
+                        </h3>
+                        <h4 className="education__white-spacing u-margin-bottom-small">M. S. in Computer Science    |    GPA: 4.00    |    01/2021 - Present (Expected 12/2022)</h4>
+                        <p>
+                            <span className="text-font-style">Relevant Coursework: </span>Data Mining, Data Visualization
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div className="row row-2">
+                <div className="education">
+                    <figure className="education__shape">
                         <img className="education__img" src={CCicon} alt="Chabot College icon" />
                         <figcaption className="education__caption">Hayward, CA</figcaption>
                     </figure>
@@ -28,7 +47,7 @@ function Education() {
                         <h3 className="heading-quaternary u-margin-bottom-small">
                             Chabot College
                         </h3>
-                        <h4 className="education__white-spacing u-margin-bottom-small">A. S. in Computer Science    |    GPA: 4.00    |    01/2017 - Present</h4>
+                        <h4 className="education__white-spacing u-margin-bottom-small">Computer Science    |    GPA: 4.00    |    01/2017 - 08/2020</h4>
                         <p>
                             <span className="text-font-style">Relevant Coursework: </span>Introduction to Data Structures, Object-Oriented Programming Methods in Java, Introduction to Structured Programming in C++, Introduction to UNIX
                         </p>

@@ -53,6 +53,18 @@
         }
     }
 
+    &__center {
+        width: 100%;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 3rem 5rem;
+
+        @include respond(tab-land) {
+            display: block;
+            width: 100%;
+        }
+    }
+
     &__initial {
         text-transform: initial;
     }
@@ -66,6 +78,34 @@
             width: 50%;
             display: inline;
             box-shadow: 0px 2px 0px -1px $color-grey-light-2;
+        }
+    }
+
+    // Styling for Twilio message
+    &__message {
+        font-size: 1.4rem;
+
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        -webkit-hyphens: auto;
+        hyphens: auto;
+        margin: 1rem;
+
+        &__placeholder {
+        
+            width: 50%;
+    
+            &::placeholder {
+                opacity: .4;
+            }
+    
+            @include respond(tab-land) {
+                width: 100%;
+            }
+        }
+
+        &__spacer {
+            margin: 8px;
         }
     }
 

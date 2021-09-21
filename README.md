@@ -20,7 +20,7 @@
 
 <!-- Reference: 
 
-1) Project tutorial (https://www.udemy.com/course/advanced-css-and-sass/)
+1) Project Framwork tutorial (https://www.udemy.com/course/advanced-css-and-sass/)
 
 2) Animated Text tutorial (https://www.youtube.com/watch?v=PP0Os0UvMCs)
 

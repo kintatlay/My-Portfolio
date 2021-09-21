@@ -4,7 +4,7 @@ import logo1x from '../assets/logo-blue-1x.png';
 
 function Footer() {
     return (
-        <footer className="footer">
+        <footer className="footer" id="section-footer">
             <div className="footer__logo-box">
                 <picture className="footer__logo">
                     <source srcSet={`${logo1x} 1x, ${logo2x} 2x`} media="(max-width: 37.5em)"></source>
@@ -18,6 +18,7 @@ function Footer() {
                             <li className="footer__item"><a href="https://www.linkedin.com/in/kin-tat-lay/" target = "_blank" rel="noopener noreferrer" className="footer__link">LinkedIn</a></li>
                             <li className="footer__item"><a href="https://github.com/kintatlay" target = "_blank" rel="noopener noreferrer" className="footer__link">Github</a></li>
                             <li className="footer__item"><a href="mailto:kin.tat.lay@gmail.com?subject=Inquiry%20about%20your%20portfolio%20website" className="footer__link">Email Me</a></li>
+                            <li className="footer__item"><a href="#popup-twilio-sms" className="footer__link">Text Me</a></li>
                         </ul>
                     </div>
                 </div>

@@ -606,6 +606,15 @@ body {
       .popup__right {
         display: block;
         width: 100%; } }
+  .popup__center {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 5rem; }
+    @media only screen and (max-width: 75em) {
+      .popup__center {
+        display: block;
+        width: 100%; } }
   .popup__initial {
     text-transform: initial; }
   .popup__img {
@@ -617,6 +626,22 @@ body {
         width: 50%;
         display: inline;
         box-shadow: 0px 2px 0px -1px #eee; } }
+  .popup__message {
+    font-size: 1.4rem;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    margin: 1rem; }
+    .popup__message__placeholder {
+      width: 50%; }
+      .popup__message__placeholder::placeholder {
+        opacity: .4; }
+      @media only screen and (max-width: 75em) {
+        .popup__message__placeholder {
+          width: 100%; } }
+    .popup__message__spacer {
+      margin: 8px; }
   .popup__text {
     font-size: 1.4rem;
     -moz-hyphens: auto;
@@ -769,10 +794,10 @@ body {
   .footer__item {
     display: inline-block; }
     .footer__item:not(:last-child) {
-      margin-right: 13rem; }
+      margin-right: 6rem; }
       @media only screen and (max-width: 37.5em) {
         .footer__item:not(:last-child) {
-          margin-right: 8rem; } }
+          margin-right: 5rem; } }
   .footer__link:link, .footer__link:visited {
     color: #f7f7f7;
     background-color: #333;
@@ -793,9 +818,6 @@ body {
       .footer__copyright {
         width: 100%;
         float: none; } }
-
-.navigation__checkbox {
-  display: none; }
 
 .navigation__loader {
   background-color: transparent;

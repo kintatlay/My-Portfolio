@@ -38,14 +38,15 @@
         list-style: none;
     }
 
+    // Use margin-right of 13rem and 8rem when without Twilio; use margin-right of 6rem and 5rem when without Twilio
     &__item {
         display: inline-block;
 
         &:not(:last-child) {
-            margin-right: 13rem;
+            margin-right: 6rem;
 
             @include respond(phone) {
-                margin-right: 8rem;
+                margin-right: 5rem;
             }
         }
     }

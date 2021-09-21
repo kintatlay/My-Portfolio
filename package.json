@@ -11,15 +11,19 @@
     "@testing-library/user-event": "^7.1.2",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "html-loader": "^1.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "twilio": "^3.49.2"
   },
   "scripts": {
     "watch:sass": "node-sass src/sass/main.scss src/css/index.css -w",
     "dev": "webpack-dev-server",
-    "dev-all": "npm-run-all --parallel dev watch:sass",
+    "dev-all": "npm-run-all --parallel dev watch:sass server",
+    "server": "nodemon server/index.js",
     "compile:sass": "node-sass src/sass/main.scss src/css/index.comp.css",
     "concat:css": "concat -o src/css/index.concat.css src/css/icon-fonts.css src/css/index.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 5 versions' src/css/index.concat.css -o src/css/index.prefix.css",

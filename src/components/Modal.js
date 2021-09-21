@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import trswag1 from '../assets/TrSwag1.jpg';
 import trswag2 from '../assets/TrSwag2.jpg';
 import myportfolio1 from '../assets/myportfolio1.jpg';
@@ -12,6 +12,17 @@ import realestateanalysis2 from '../assets/RealEstateAnalysis2.jpg';
 
 
 function Modal() {
+
+    const [ senderName, setSenderName ] = useState('');
+    const [ senderNumber, setSenderNumber ] = useState('');
+    const [ textmessage, setTextmessage ] = useState('');
+
+    const sendText = _ => {
+        fetch(`http://localhost:4000/send-text?senderName=${senderName}&senderNumber=${senderNumber}&textmessage=${textmessage}`)
+        .catch(err => console.log(err));
+        alert("Your text message is sent.");
+    }
+
     return (
         <div>
             <div className="popup" id="popup-trswag">
@@ -147,6 +158,32 @@ function Modal() {
                             <a href="https://github.com/kintatlay/Real_Estate_Investment-Final-Project-" target="_blank" rel="noopener noreferrer" className="btn btn--blue">Source Code</a>
                         </div>
                         
+                    </div>
+                </div>
+            </div>
+
+            <div className="popup" id="popup-twilio-sms">
+                <div className="popup__content">
+                    <div className="popup__center">
+                        <a href="#section-footer" className="popup__close">&times;</a>
+                        <h2 className="heading-secondary u-margin-bottom-small-medium">Send Me a Text</h2>
+                        <p className="popup__message u-margin-bottom-small-medium">If you have an urgent request for me, you may text me at +1(559)313-4060 or fill out the following forms and submit the question to me. I will respond ASAP.</p>
+                        <label className="popup__message">Your First Name</label>
+                        <br />
+                        <input className="popup__message__placeholder" placeholder="Ex: Kin" value={senderName}
+                            onChange={e => setSenderName(e.target.value)} />
+                        <div className="popup__message__spacer"/>
+                        <label className="popup__message">Your Phone Number</label>
+                        <br />
+                        <input className="popup__message__placeholder" placeholder="Ex: +1(123)456-7890" value={senderNumber}
+                            onChange={e => setSenderNumber(e.target.value)} />
+                        <div className="popup__message__spacer"/>
+                        <label className="popup__message">Message</label>
+                        <br />
+                        <textarea rows={8} className="popup__message__placeholder" placeholder="Type your message here..." value={textmessage}
+                            onChange={e => setTextmessage(e.target.value)} />
+                        <div className="popup__message__spacer"/>
+                        <button className="btn--blue u-margin-right-medium" onClick={sendText}>Send Text</button>
                     </div>
                 </div>
             </div>
