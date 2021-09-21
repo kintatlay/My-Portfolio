@@ -18,6 +18,8 @@
 
 - To upload the changes to firebase, run `firebase deploy`.
 
+- If receive the following error `Error: Failed to get Firebase project my-portfolio-ef549. Please make sure the project exists and your account has permission to access it.` Run the command `firebase login --reauth`.
+
 <!-- Reference: 
 
 1) Project Framwork tutorial (https://www.udemy.com/course/advanced-css-and-sass/)
