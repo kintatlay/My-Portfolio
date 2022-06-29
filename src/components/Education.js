@@ -29,9 +29,9 @@ function Education() {
                         <h3 className="heading-quaternary u-margin-bottom-small">
                             Arizona State University
                         </h3>
-                        <h4 className="education__white-spacing u-margin-bottom-small">M. S. in Computer Science    |    GPA: 4.00    |    01/2021 - Present (Expected 12/2022)</h4>
+                        <h4 className="education__white-spacing u-margin-bottom-small">M. S. in Computer Science    |    GPA: 4.00    |    01/2021 - Present (Expected 12/2023)</h4>
                         <p>
-                            <span className="text-font-style">Relevant Coursework: </span>Data Mining, Data Visualization
+                            <span className="text-font-style">Relevant Coursework: </span>Data Mining, Data Visualization, Advanced Software Analysis & Design, Blockchain, Knowledge Representation
                         </p>
                     </div>
                 </div>
@@ -65,12 +65,13 @@ function Education() {
                         <h3 className="heading-quaternary u-margin-bottom-small">
                             Hack Reactor
                         </h3>
-                        <h4 className="education__white-spacing u-margin-bottom-small">Software Engineering Coding Bootcamp    |    03/2020</h4>
+                        {/* <h4 className="education__white-spacing u-margin-bottom-small">Software Engineering Coding Bootcamp    |    03/2020</h4> */}
+                        <h4 className="education__white-spacing u-margin-bottom-small">Software Engineering Coding Bootcamp    |    04/2017</h4>
                     </div>
                 </div>
             </div>
 
-            <div className="row row-2">
+            {/* <div className="row row-2">
                 <div className="education">
                     <figure className="education__shape">
                         <img className="education__img" src={UCBEicon} alt="UC Berkeley Extension icon" />
@@ -83,9 +84,9 @@ function Education() {
                         <h4 className="education__white-spacing u-margin-bottom-small">Data Analytics Bootcamp    |    08/2018</h4>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
-            <div className="row row-2">
+            {/* <div className="row row-2">
                 <div className="education">
                     <figure className="education__shape">
                         <img className="education__img" src={CSUFicon} alt="CSUF icon" />
@@ -101,7 +102,7 @@ function Education() {
                         </p>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             <div className="row row-2">
                 <div className="education">

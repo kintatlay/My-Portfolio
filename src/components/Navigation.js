@@ -12,11 +12,12 @@ function Navigation() {
         
         <div className="navigation">
             
-            <input type="checkbox" className="navigation__checkbox" checked={checkbox} onChange={() => toggleCheck()} />
             <label type="checkbox" onClick={() => toggleCheck()} className="navigation__button">
                 <div className="navigation__loader"></div>
                 <span className="navigation__icon">&nbsp;</span>
             </label>
+            <input type="checkbox" className="navigation__checkbox" checked={checkbox} onChange={() => toggleCheck()} />
+
             <div className="navigation__background">&nbsp;</div>
             <nav className="navigation__nav">
                 <ul className="navigation__list">

@@ -43,7 +43,8 @@
         display: inline-block;
 
         &:not(:last-child) {
-            margin-right: 6rem;
+            // margin-right: 6rem;
+            margin-right:12rem;
 
             @include respond(phone) {
                 margin-right: 5rem;

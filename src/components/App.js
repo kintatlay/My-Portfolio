@@ -29,7 +29,7 @@ function App() {
         <div className="header__text-box">
           <h1 className="heading-primary">
             <span className="heading-primary--main">Kin Tat Lay</span>
-            <span className="heading-primary--sub">Software Engineer</span>
+            <span className="heading-primary--sub">Front-end Engineer</span>
           </h1>
 
           <a href="#section-portfolio" className="btn btn--white btn--animated">See Projects</a>

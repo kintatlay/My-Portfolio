@@ -8,6 +8,7 @@ import reactIconPic from '../assets/react-icon.png';
 import resume from '../assets/KinTatLayResume.pdf';
 
 function About() {
+
     return (
         <section className="section-about" id="section-about-me">
             <div className="u-center-text u-margin-bottom-big">
@@ -19,10 +20,12 @@ function About() {
             <div className="row">
                 <div className="col-1-of-2">
                     <h3 className="heading-tertiary u-margin-bottom-small-medium">
-                        Software Engineer actively seeking opportunities
+                        {/* Software Engineer actively seeking opportunities */}
+                        Frontend Engineer
                     </h3>
                     <p className="paragraph">
-                    I am a Full-Stack Software Engineer who is excited to build meaningful applications that focus on improving efficiencies to tasks or change the way we live our life. I enjoy working with JavaScript, Node.JS, MySQL/MongoDB, React, and Express to build full-stack websites.
+                    {/* I am a Full-Stack Software Engineer who is excited to build meaningful applications that focus on improving efficiencies to tasks or change the way we live our life. I enjoy working with JavaScript, Node.JS, MySQL/MongoDB, React, and Express to build full-stack websites. */}
+                    I am a Front-end Engineer who is excited to build meaningful applications that focus on improving efficiencies to tasks or change the way we live our life. My knowledge extends beyond front-end development. I enjoy working with JavaScript, Node.JS, MySQL/MongoDB, React, and Express to build full-stack websites.
                     </p>
                     <p className="paragraph">
                     I am committed to solving challenges with a detailed-oriented mindsets and delivering quality products and services. With my background in accounting, I acquired the quantitative skill to problem solve issues and understand what the market and customers need.
