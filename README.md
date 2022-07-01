@@ -16,9 +16,12 @@
 
 - Open a terminal and run the command `npm run dev-all` to watch the changes. Also, unhighlight the line `import './css/icon-fonts.css';` in the file `index.js`. Then make all the necessary changes with the js and scss files. When done, run the command `npm run build:css` to build the compressed css file. Go back to `index.js` and code out the line `import './css/icon-fonts.css';`. At the end, run `npm run build`.
 
+- git add and push everything to Github. Then run the command `npm run deploy` in terminal.
+
+<!-- **Firebase Tutorial**
 - To upload the changes to firebase, run `firebase deploy`.
 
-- If receive the following error `Error: Failed to get Firebase project my-portfolio-ef549. Please make sure the project exists and your account has permission to access it.` Run the command `firebase login --reauth`.
+- If receive the following error `Error: Failed to get Firebase project my-portfolio-ef549. Please make sure the project exists and your account has permission to access it.` Run the command `firebase login --reauth`. -->
 
 <!-- Reference: 
 
@@ -35,4 +38,6 @@
 6) Firebase Deploy tutorial (https://www.youtube.com/watch?v=IDHfvpsYShs)
 
 7) Use custom domain tutorial (https://www.youtube.com/watch?v=eCbelBE9g7Y&t=418s) and (https://www.youtube.com/watch?v=0VxXJbfzCs4)
+
+8) Github Deploy and custom domain tutorial (https://www.youtube.com/watch?v=6Rto09ElUuY)
 -->
