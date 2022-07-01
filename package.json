@@ -1,7 +1,7 @@
 {
   "name": "myportfolio",
   "version": "0.1.0",
-  "homepage": "https://kintatlay.github.io/My-Portfolio",
+  "homepage": "https://kintatlay.com",
   "private": true,
   "dependencies": {
     "@babel/core": "^7.11.1",
