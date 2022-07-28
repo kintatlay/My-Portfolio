@@ -18,6 +18,8 @@
 
 - git add and push everything to Github. Then run the command `npm run deploy` in terminal.
 
+- If webpage does not load, go to `Setting` in the Github portfolio repo. Then click `Pages` to verify the custom domain is correct. If not, enter `kintatlay.com` on custom domain and save.
+
 <!-- **Firebase Tutorial**
 - To upload the changes to firebase, run `firebase deploy`.
 

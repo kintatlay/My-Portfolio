@@ -66,7 +66,7 @@ function Education() {
                             Hack Reactor
                         </h3>
                         {/* <h4 className="education__white-spacing u-margin-bottom-small">Software Engineering Coding Bootcamp    |    03/2020</h4> */}
-                        <h4 className="education__white-spacing u-margin-bottom-small">Software Engineering Coding Bootcamp    |    04/2017</h4>
+                        <h4 className="education__white-spacing u-margin-bottom-small">Software Engineering Coding Bootcamp    |    12/2016</h4>
                     </div>
                 </div>
             </div>
