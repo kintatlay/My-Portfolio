@@ -1,4 +1,5 @@
-import React, {useState} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
+import hoverEffect from 'hover-effect';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -11,11 +12,13 @@ import RipplingWebImg from '../assets/rippling-web.png';
 import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import CircleOutlinedIcon from '@mui/icons-material/CircleOutlined';
+import DistortionImg from '../assets/distortion.jpg';
 
 var workData = [
     {companyName: "AirTable", 
         id: 1,
-        imgData: AirtableLogoImg,
+        imgData1: AirtableLogoImg,
+        imgData2: AirtableWebImg,
         fileDesc: "AirtableLogoImg",
         jobTitle: "Frontend Engineer", 
         location: "San Francisco, CA", 
@@ -35,7 +38,8 @@ var workData = [
     {companyName: "Rippling",
         id: 2, 
         jobTitle: "Software Engineer - Frontend", 
-        imgData: RipplingLogoImg,
+        imgData1: RipplingLogoImg,
+        imgData2: RipplingWebImg,
         fileDesc: "RipplingLogoImg",
         location: "San Francisco, CA", 
         date: "Jun 2019 - May 2020", 
@@ -53,7 +57,8 @@ var workData = [
     {companyName: "Course Hero", 
         id: 3,
         jobTitle: "Frontend Engineer", 
-        imgData: CourseHeroLogoImg,
+        imgData1: CourseHeroLogoImg,
+        imgData2: CourseHeroWebImg,
         fileDesc: "CourseHeroLogoImg",
         location: "San Francisco, CA", 
         date: "Jun 2017 - May 2019", 
@@ -113,7 +118,8 @@ const Work = () => {
                                 key={ele.id}
                                 companyName={ele.companyName}
                                 jobTitle={ele.jobTitle}
-                                imgData={ele.imgData}
+                                imgData1={ele.imgData1}
+                                imgData2={ele.imgData2}
                                 fileDesc={ele.fileDesc}
                                 location={ele.location}
                                 date={ele.date}
@@ -128,10 +134,22 @@ const Work = () => {
     )
 }
 
-const Card = ({ companyName, jobTitle, imgData, fileDesc, location, date, projectDescription, responsibilities }) => {
+const Card = ({ companyName, jobTitle, imgData1, imgData2, fileDesc, location, date, projectDescription, responsibilities }) => {
+
+    const imgContainer = useRef();
+    useEffect(() => {
+        new hoverEffect({
+            parent: imgContainer.current,
+            intensity: 0.5,
+            image1: imgData1,
+            image2: imgData2,
+            displacementImage: DistortionImg
+        })
+    }, [imgContainer])
+
     return(
         <div style={{display: "flex", alignItems: "center", flexDirection: "column", textAlign: "center", color: "gray"}}>
-            <img src={imgData} alt={fileDesc} className="work__img" />
+            <div ref={imgContainer} className="work__img"></div>
             <p>{projectDescription}</p>
             <p className="heading-quaternary work__caption">
                 <span className="work__caption__color--style">
