@@ -680,6 +680,68 @@ body {
   .popup__close:hover {
     color: #2998ff; }
 
+.work .slick-arrow.slick-prev,
+.work .slick-arrow.slick-next {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  border-radius: 5px; }
+
+.work .slick-prev::before,
+.work .slick-next::before {
+  display: none; }
+
+.slick-arrow.slick-next {
+  right: -70px; }
+
+.slick-arrow.slick-prev {
+  left: -70px; }
+
+.work li button:before {
+  font-size: 15px; }
+
+.work li {
+  top: 15px; }
+
+.work {
+  font-size: 1.6rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .work {
+      display: flex;
+      padding: 0 2rem 2rem 2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .work {
+      width: 85%;
+      margin: 0 auto; } }
+  .work__container {
+    width: 80%; }
+  .work__caption {
+    margin: 25px 0;
+    font-style: italic; }
+    .work__caption__color--style {
+      color: #2998ff; }
+  .work__img {
+    width: 200px;
+    height: 160px; }
+  .work__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  @media only screen and (max-width: 37.5em) {
+    .work__button {
+      display: none;
+      visibility: hidden; } }
+  .work__button:active {
+    transform: scale(0.98); }
+
 .header {
   height: 95vh;
   background-size: cover;
@@ -1030,3 +1092,9 @@ body {
   @media only screen and (max-width: 56.25em) {
     .section-educations {
       padding: 10rem 0; } }
+
+.section-work {
+  padding-top: 10rem 0; }
+  @media only screen and (max-width: 56.25em) {
+    .section-work {
+      padding: 5rem 0; } }

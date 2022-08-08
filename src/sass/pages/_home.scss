@@ -60,3 +60,11 @@
         padding: 10rem 0;
     }
 }
+
+.section-work {
+    padding-top: 10rem 0;
+
+    @include respond(tab-port) {
+        padding: 5rem 0;
+    }
+}

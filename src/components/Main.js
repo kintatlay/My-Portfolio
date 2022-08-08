@@ -3,7 +3,7 @@ import About from './About';
 import Skills from './Skills';
 import Portfolio from './Portfolio';
 import Education from './Education';
-
+import Work from './Work';
 
 function Main() {
     return (
@@ -12,6 +12,7 @@ function Main() {
             <Skills />
             <Portfolio />
             <Education />
+            <Work />
         </main>
     );
 }

@@ -1,0 +1,85 @@
+.work .slick-arrow.slick-prev,
+.work .slick-arrow.slick-next {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    border-radius: 5px;
+}
+.work .slick-prev::before,
+.work .slick-next::before {
+    display: none;
+}
+
+.slick-arrow.slick-next {
+    right: -70px;
+}
+
+.slick-arrow.slick-prev {
+    left: -70px;
+}
+
+.work li button:before {
+    font-size: 15px;
+}
+
+.work li {
+    top: 15px;
+}
+
+.work {
+    font-size: $default-font-size;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+    
+    @include respond(tab-port) {
+        display: flex;
+        padding: 0 2rem 2rem 2rem;
+    }
+
+    @include respond(phone) {
+        width: 85%;
+        margin: 0 auto;        
+    }
+
+    &__container {
+        width: 80%;
+
+    }
+
+    &__caption {
+        margin: 25px 0;
+        font-style: italic;
+
+        &__color--style {
+            color: $color-primary;
+        }
+    }
+
+    &__img {
+        width: 200px;
+        height: 160px;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__button {
+        @include respond(phone) {
+            display: none;
+            visibility: hidden;
+        }
+    }
+
+    &__button:active {
+        transform: scale(0.98)
+    }
+}

@@ -25,6 +25,7 @@ function Navigation() {
                     <li className="navigation__item"><a href="#section-skills" className="navigation__link" onClick={() => toggleCheck()}>Skills</a></li>
                     <li className="navigation__item"><a href="#section-portfolio" className="navigation__link" onClick={() => toggleCheck()}>Projects</a></li>
                     <li className="navigation__item"><a href="#section-education" className="navigation__link" onClick={() => toggleCheck()}>Education</a></li>
+                    <li className="navigation__item"><a href="#section-work" className="navigation__link" onClick={() => toggleCheck()}>Work Experience</a></li>
                 </ul>
             </nav>
         </div>
