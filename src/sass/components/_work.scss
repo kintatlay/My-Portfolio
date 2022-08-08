@@ -34,15 +34,13 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 5rem;
     
     @include respond(tab-port) {
         display: flex;
-        padding: 0 2rem 2rem 2rem;
     }
 
     @include respond(phone) {
-        width: 85%;
+        width: 95%;
         margin: 0 auto;        
     }
 

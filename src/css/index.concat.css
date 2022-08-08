@@ -517,6 +517,14 @@ html {
 body {
   box-sizing: border-box; }
 
+@media only screen and (max-width: 37.5em) {
+  html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; } }
+
 ::selection {
   background-color: #2998ff;
   color: #fff; }
@@ -1156,15 +1164,13 @@ body {
   font-size: 1.6rem;
   width: 100%;
   display: flex;
-  justify-content: center;
-  margin-bottom: 5rem; }
+  justify-content: center; }
   @media only screen and (max-width: 56.25em) {
     .work {
-      display: flex;
-      padding: 0 2rem 2rem 2rem; } }
+      display: flex; } }
   @media only screen and (max-width: 37.5em) {
     .work {
-      width: 85%;
+      width: 95%;
       margin: 0 auto; } }
   .work__container {
     width: 80%; }
@@ -1540,7 +1546,8 @@ body {
       padding: 10rem 0; } }
 
 .section-work {
-  padding-top: 10rem 0; }
+  position: relative;
+  padding: 15rem 0; }
   @media only screen and (max-width: 56.25em) {
     .section-work {
-      padding: 5rem 0; } }
+      padding: 10rem 0; } }

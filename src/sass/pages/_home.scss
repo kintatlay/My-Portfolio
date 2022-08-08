@@ -62,9 +62,10 @@
 }
 
 .section-work {
-    padding-top: 10rem 0;
+    position: relative;
+    padding: 15rem 0;
 
     @include respond(tab-port) {
-        padding: 5rem 0;
+        padding: 10rem 0;
     }
 }
