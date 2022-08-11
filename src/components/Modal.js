@@ -43,7 +43,7 @@ function Modal() {
                                 <li>The website is currently work in progress. Please check back later.</li>
                             </ul>
                         </div>
-                        <a href="#popup-trswag" className="btn btn--blue">Work in progress</a>
+                        <a href="https://www.trswag.com" className="btn btn--blue">Work in progress</a>
                     </div>
                 </div>
             </div>
