@@ -12,7 +12,7 @@ function Main() {
             <Skills />
             <Portfolio />
             <Education />
-            <Work />
+            {/* <Work /> */}
         </main>
     );
 }

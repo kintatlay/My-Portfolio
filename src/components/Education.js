@@ -29,7 +29,7 @@ function Education() {
                         <h3 className="heading-quaternary u-margin-bottom-small">
                             Arizona State University
                         </h3>
-                        <h4 className="education__white-spacing u-margin-bottom-small">M. S. in Computer Science    |    GPA: 4.00    |    01/2021 - Present (Expected 12/2023)</h4>
+                        <h4 className="education__white-spacing u-margin-bottom-small">M. S. in Computer Science    |    GPA: 4.00    |    01/2021 - Present (Expected 08/2023)</h4>
                         <p>
                             <span className="text-font-style">Relevant Coursework: </span>Data Mining, Data Visualization, Advanced Software Analysis & Design, Blockchain, Knowledge Representation
                         </p>

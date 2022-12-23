@@ -31,7 +31,7 @@ function About() {
                     I am committed to solving challenges with a detailed-oriented mindsets and delivering quality products and services. With my background in accounting, I acquired the quantitative skill to problem solve issues and understand what the market and customers need.
                     </p>
 
-                    <a href={resume} download="Kin Tat Lay Resume" className="btn-text multiple-white-space">Download My Resume (PDF)  <i className="icon-basic-download"></i></a>
+                    {/* <a href={resume} download="Kin Tat Lay Resume" className="btn-text multiple-white-space">Download My Resume (PDF)  <i className="icon-basic-download"></i></a> */}
                 </div>
                 <div className="col-1-of-2">
                     <div className="composition">
